@@ -19,8 +19,8 @@
 
 \begin{document}
 
-\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
-\newcolumntype{Y}{>{\centering\arraybackslash\columncolor{lightgray}}X}
+\newcolumntype{Y}{>{\centering\arraybackslash\columncolor{lightgray}}c}
+\newcolumntype{Z}{>{\centering\arraybackslash\columncolor{lightgray}}m{0.14\linewidth}}
 \newcolumntype{C}{>{\columncolor{lightgray}}c}
 \renewcommand{\arraystretch}{1.5}
 
@@ -139,140 +139,131 @@
 
 \begin{table*}[!htb]
 \centering
-\caption{由敏捷实践和概念填充的五种敏捷化级别}
+\caption{The ﬁve levels of agility populated with agile practices and concepts}
 \label{five-levels}
-\begin{tabularx}{\textwidth}{|p{6em}|X|X|X|X|X|}
-\hline
-
-% >>> row 1
-\multirow{2}{*}{} & \multicolumn{5}{C|}{\textbf{敏捷原则}} \\ \hhline{|~|-----|}
-
-% >>> row 2
-&
-% c2
-\multicolumn{1}{Y|}{\textit{拥抱变革来实现客户价值}} & 
-% c3
-\multicolumn{1}{Y|}{\textit{经常规划和交付软件}} & 
-% c4
-\multicolumn{1}{Y|}{\textit{以人为本}} & 
-% c5
-\multicolumn{1}{Y|}{\textit{技术卓越}} & 
-% c6
-\multicolumn{1}{Y|}{\textit{客户协作}} \\ \hline
-
-% >>> row 3
-% c1
-\multicolumn{1}{|Y|}{\begin{tabularx}{7em}{@{}X@{}}
-级别5 \\ \textbf{包容} \\ \textit{建立一个活跃的环境来保持敏捷化}
-\end{tabularx}} & 
-% c2
-低仪式流程[33, 39] & 
-% c3
-敏捷项目评估[20] & 
-% c4
-\multicolumn{1}{X|}{\uline{理想的敏捷物理设置[33]}} & 
-% c5
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-\uline{测试驱动的开发[11]} \\ \uline{结对开发[49]} \\ \uline{团队中没有或最少化-1或1b级人员[17, 15]} \\
-\end{tabularx}} & 
-% c6
-\multicolumn{1}{X|}{\uline{开发者与顾客经常面对面的互动（协作）[12]}} \\ \hline
-
-% >>> row 4
-% c1
-\multicolumn{1}{|Y|}{\begin{tabularx}{7em}{@{}X@{}}
-级别4 \\ \textbf{适应} \\ \textit{通过多级反馈来响应改变}
-\end{tabularx}} &
-% c2
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-客户驱动迭代[33] \\ 持续的客户满意度反馈[35, 43]
-\end{tabularx}} &
-% c3
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-更小更频繁的发布软件（4-8周）[35] \\ 适应性规划[33][20]
-\end{tabularx}} &
-% c4
-&
-% c5
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-日常进展跟踪会议[6] \\ 敏捷文档[40, 31] \\ 用户故事[21] 
-\end{tabularx}} &
-% c6
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-\uline{客户经常试用程序[15]} \\ \uline{客户合同围绕着协作承诺[26, 55]}
-\end{tabularx}} \\ \hline
-
-% >>> row 5
-% c1
-\multicolumn{1}{|Y|}{\begin{tabularx}{7em}{@{}X@{}}
-级别3 \\ \textbf{效率} \\ \textit{在高效率的方式下开发高质量、可工作的软件}
-\end{tabularx}} &
-% c2
-&
-% c3
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-风险驱动迭代[33] \\ 计划功能而不是任务[20] \\ 维护全部功能和他们的状态列表（积压）[31]
-\end{tabularx}} &
-% c4
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-自组织团队[33, 39, 31, 18] \\ \uline{经常面对面交流[39, 18, 13]}
-\end{tabularx}} &
-% c5
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-持续集成[33] \\ 持续开发（重构）[31, 12, 24, 5] \\ 单元测试[28] \\ \uline{30\%的等级2和等级3成员[17, 15]}
-\end{tabularx}} &
-% c6
-\\ \hline
-
-% >>> row 4
-% c1
-\multicolumn{1}{|Y|}{\begin{tabularx}{7em}{@{}X@{}}
-级别4 \\ \textbf{适应} \\ \textit{通过多级反馈来响应改变}
-\end{tabularx}} &
-% c2
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-客户驱动迭代[33] \\ 持续的客户满意度反馈[35, 43]
-\end{tabularx}} &
-% c3
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-更小更频繁的发布软件（4-8周）[35] \\ 适应性规划[33][20]
-\end{tabularx}} &
-% c4
-&
-% c5
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-日常进展跟踪会议[6] \\ 敏捷文档[40, 31] \\ 用户故事[21] 
-\end{tabularx}} &
-% c6
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-\uline{客户经常试用程序[15]} \\ \uline{客户合同围绕着协作承诺[26, 55]}
-\end{tabularx}} \\ \hline
-
-% >>> row 4
-% c1
-\multicolumn{1}{|Y|}{\begin{tabularx}{7em}{@{}X@{}}
-级别4 \\ \textbf{适应} \\ \textit{通过多级反馈来响应改变}
-\end{tabularx}} &
-% c2
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-客户驱动迭代[33] \\ 持续的客户满意度反馈[35, 43]
-\end{tabularx}} &
-% c3
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-更小更频繁的发布软件（4-8周）[35] \\ 适应性规划[33][20]
-\end{tabularx}} &
-% c4
-&
-% c5
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-日常进展跟踪会议[6] \\ 敏捷文档[40, 31] \\ 用户故事[21] 
-\end{tabularx}} &
-% c6
-\multicolumn{1}{X|}{\begin{tabularx}{7em}{@{}X@{}}
-\uline{客户经常试用程序[15]} \\ \uline{客户合同围绕着协作承诺[26, 55]}
-\end{tabularx}} \\ \hline
-
-\end{tabularx}
+\begin{tabular}{|p{0.13\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|p{0.14\linewidth}|}
+    % >>> row 1
+    \hline
+    \multirow{2}{*}{} & \multicolumn{5}{C|}{\textbf{敏捷原则}} \\ \hhline{|~|-----|}
+    
+    % >>> row 2
+    &
+    % c2
+    \multicolumn{1}{Z|}{\textit{拥抱变革来实现客户价值}} & 
+    % c3
+    \multicolumn{1}{Z|}{\textit{经常规划和交付软件}} & 
+    % c4
+    \multicolumn{1}{Z|}{\textit{以人为本}} & 
+    % c5
+    \multicolumn{1}{Z|}{\textit{技术卓越}} & 
+    % c6
+    \multicolumn{1}{Z|}{\textit{客户协作}} \\ \hline
+    
+    % >>> row 3
+    % c1
+    \multicolumn{1}{|Y|}{\begin{tabular}{@{}p{0.13\linewidth}@{}}
+    级别5 \\ \textbf{包容} \\ \textit{建立一个活跃的环境来保持敏捷化}
+    \end{tabular}} & 
+    % c2
+    低仪式流程[33, 39] & 
+    % c3
+    敏捷项目评估[20] & 
+    % c4
+    \multicolumn{1}{p{0.14\linewidth}|}{\uline{理想的敏捷物理设置[33]}} & 
+    % c5
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    \uline{测试驱动的开发[11]} \\ \uline{结对开发[49]} \\ \uline{团队中没有或最少化-1或1b级人员[17, 15]} \\
+    \end{tabular}} & 
+    % c6
+    \multicolumn{1}{m{0.14\linewidth}|}{\uline{开发者与顾客经常面对面的互动（协作）[12]}} \\ \hline
+    
+    % >>> row 4
+    % c1
+    \multicolumn{1}{|Y|}{\begin{tabular}{@{}p{0.13\linewidth}@{}}
+    级别4 \\ \textbf{适应} \\ \textit{通过多级反馈来响应改变}
+    \end{tabular}} & 
+    % c2
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    客户驱动迭代[33] \\ 持续的客户满意度反馈[35, 43]
+    \end{tabular}} & 
+    % c3
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    更小更频繁的发布软件（4-8周）[35] \\ 适应性规划[33][20]
+    \end{tabular}} &  
+    % c4
+    & 
+    % c5
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    日常进展跟踪会议[6] \\ 敏捷文档[40, 31] \\ 用户故事[21] 
+    \end{tabular}} &  
+    % c6
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    \uline{客户经常试用程序[15]} \\ \uline{客户合同围绕着协作承诺[26, 55]}
+    \end{tabular}} \\ \hline
+    
+    % >>> row 5
+    % c1
+    \multicolumn{1}{|Y|}{\begin{tabular}{@{}p{0.13\linewidth}@{}}
+    级别3 \\ \textbf{效率} \\ \textit{在高效率的方式下开发高质量、可工作的软件}
+    \end{tabular}} & 
+    % c2
+    & 
+    % c3
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    风险驱动迭代[33] \\ 计划功能而不是任务[20] \\ 维护全部功能和他们的状态列表（积压）[31]
+    \end{tabular}} &  
+    % c4
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    自组织团队[33, 39, 31, 18] \\ \uline{经常面对面交流[39, 18, 13]}
+    \end{tabular}} &  
+    % c5
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    持续集成[33] \\ 持续开发（重构）[31, 12, 24, 5] \\ 单元测试[28] \\ \uline{30\%的等级2和等级3成员[17, 15]}
+    \end{tabular}} & 
+    % c6
+    \\ \hline
+    
+    % >>> row 6
+    % c1
+    \multicolumn{1}{|Y|}{\begin{tabular}{@{}p{0.13\linewidth}@{}}
+    级别2 \\ \textbf{进化} \\ \textit{软件早期、持续交付}
+    \end{tabular}} & 
+    % c2
+    进化需求[33] &
+    % c3
+   \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    持续交付[33, 31, 26, 12] \\ 在不同级别中进行规划[20]
+    \end{tabular}} & 
+    % c4
+    & 
+    % c5
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    软件配置管理[31] \\ 跟踪迭代过程[33] \\ 在前一阶段不做详细的细节设计（BDUF）[4, 12]
+    \end{tabular}} & 
+    % c6
+    \multicolumn{1}{m{0.14\linewidth}|}{\uline{反应开发进化的用户合约[26, 35]}} \\ \hline
+    
+    % >>> row 7
+    % c1
+    \multicolumn{1}{|Y|}{\begin{tabular}{@{}p{0.13\linewidth}@{}}
+    级别1 \\ \textbf{合作} \\ \textit{强化交流和合作}
+    \end{tabular}} & 
+    % c2
+    反思并调整流程[35, 43] &
+    % c3
+    合作规划[39, 18, 33] &
+    % c4
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    团队协作[46] \\ 给予团队力量并激励团队[13]
+    \end{tabular}} & 
+    % c5
+    \multicolumn{1}{l|}{\begin{tabular}{@{}p{0.14\linewidth}@{}}
+    编程标准[29, 48, 36] \\ 知识共享工具[33] \\ 任务志愿者[33]
+    \end{tabular}} & 
+    % c6
+    \multicolumn{1}{m{0.14\linewidth}|}{\uline{客户对于开发团体合作的承诺[13]}} \\ \hline
+    
+\end{tabular}
 \end{table*}
 
 \bibliographystyle{spmpsci}
